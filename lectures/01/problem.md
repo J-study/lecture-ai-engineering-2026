@@ -94,4 +94,15 @@ AIE_MODEL=gemini-3.5-flash-lite uv run python -m app.ask "燃油サーチャー�
 Gemini 3.1 Flash-Lite
 AIE_MODEL=Gemini 3.6 Flash uv run python -m app.ask "燃油サーチャージとは何ですか？短く説明して"
 
+### 呼び出すモデルについての補足
+モデルの仕様は更新されることがあります。  
+gemini 3.5 flashにおいては、Gemini APIのドキュメントが更新され、非推奨となりgemini 3.6 flashへ転送されるようになりました。
+
+- 参考：Gemini 3.5 Flashのドキュメント
+https://ai.google.dev/gemini-api/docs/models/gemini-3.5-flash?hl=ja
+
+このように、サービスとして提供されているLLMは頻繁に仕様が変わるため、サービス仕様のドキュメントを確認するなどの習慣を付けておき仕様変更に対応しましょう。
+
+第1回の宿題においては、任意にモデルを変えて実施していただければ問題ありません。
+
 temperature を変えるには、`generate_content` の `config` 引数を調べてみましょう。
